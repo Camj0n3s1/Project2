@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class PosAvg {
 	private String stID;
 	ArrayList<String> file = new ArrayList<String>();
-
 	// Constructor
 	public PosAvg() {
 
@@ -37,8 +36,15 @@ public class PosAvg {
 	}
 
 	// Returns the index of the station
-	public int indexOfStation(String stID) {
+	public int indexOfStation() {
+		String target = stID;
 		int index = 0;
+		for(int i = 0; i < file.size(); ++i) {
+			String stationMatch = file.get(i);
+			if(stationMatch.equalsIgnoreCase(target)) {
+				index = file.indexOf(stationMatch);
+			}
+		}
 		return index;
 	}
 }
