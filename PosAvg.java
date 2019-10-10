@@ -47,4 +47,14 @@ public class PosAvg {
 		}
 		return index;
 	}
+	
+	// 
+	public int averageOf() {
+		
+	}
+	@Override
+	public String toString() {
+		
+	}
+	
 }
