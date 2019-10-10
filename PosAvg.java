@@ -8,4 +8,9 @@ public class PosAvg {
 	public PosAvg() {
 		
 	}
+	
+	//Constructor with parameter
+	public PosAvg(String stID) {
+		this.stID = stID;
+	}
 }
